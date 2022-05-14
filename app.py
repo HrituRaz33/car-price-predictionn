@@ -13,7 +13,7 @@ def index():
 
 
 
-@app.route('/api/', methods=['POST'])
+@app.route('/', methods=['POST'])
 def get_price():
     car_model = request.form.get('car_model')
     brand = request.form.get('brand')
